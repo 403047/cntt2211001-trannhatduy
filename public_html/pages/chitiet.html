@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chi tiết sản phẩm - {{Product Name}}</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .price-current { color: #e00; font-size: 1.5rem; font-weight: bold; }
+    .price-old { text-decoration: line-through; color: #888; margin-left: .5rem; }
+    .btn-buy { background-color: #ffbe00; color: #000; }
+    .btn-buy:hover { background-color: #ffc300; color: #fff; }
+
+    @media (max-width: 576px) {
+      #productCarousel .carousel-item img {
+        width: 100% !important;
+        height: auto;
+      }
+      .carousel-control-prev, .carousel-control-next {
+        width: 5%;
+      }
+      .btn-lg.me-2, .btn-lg {
+        width: 100%;
+        margin-bottom: 0.5rem;
+      }
+      .table.w-75 {
+        width: 100% !important;
+      }
+      .table th, .table td {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+      }
+      .container {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+      }
+      .navbar .container {
+        flex-wrap: wrap;
+      }
+      .navbar form {
+        flex-basis: 100%;
+        margin: 0.5rem 0;
+      }
+      .navbar .d-flex.align-items-center {
+        flex-basis: 100%;
+        justify-content: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="../index.html">thegioididong</a>
+      <form class="d-flex flex-grow-1 mx-3">
+        <input class="form-control me-2" type="search" placeholder="Bạn tìm gì..." aria-label="Search">
+      </form>
+      <div class="d-flex align-items-center">
+        <a href="Dangnhap.html" class="btn btn-outline-dark me-2">Đăng nhập</a>
+        <a href="Giohang.html" class="text-dark me-3 text-decoration-none">🛒 Giỏ hàng</a>
+      </div>
+    </div>
+  </nav>
+
+  <nav aria-label="breadcrumb" class="bg-light py-2">
+    <div class="container">
+      <ol class="breadcrumb mb-0">
+        <li class="breadcrumb-item"><a href="../index.html">Trang chủ</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Xiaomi Redmi 13x 6GB/128GB</li>
+      </ol>
+    </div>
+  </nav>
+
+  <main class="container my-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../images/XR13.jpg" class="d-block w-50 mx-auto" alt="Ảnh 1">
+            </div>
+            <div class="carousel-item">
+              <img src="../images/XR13B.png" class="d-block w-50 mx-auto" alt="Ảnh 2">
+            </div>
+            <div class="carousel-item">
+              <img src="../images/XR13D.png" class="d-block w-50 mx-auto" alt="Ảnh 3">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Trước</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Tiếp</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <h2>Xiaomi Redmi 13x 6GB/128GB</h2>
+        <div class="mb-3">
+          <span class="price-current">3.990.000₫</span>
+          <span class="price-old">4.290.000₫</span>
+        </div>
+        <div class="mb-3">
+          <button class="btn btn-buy btn-lg me-2">Mua ngay</button>
+          <button class="btn btn-outline-secondary btn-lg">Thêm vào giỏ</button>
+        </div>
+        <table class="table table-bordered w-75">
+          <tbody>
+            <tr><th scope="row">Màn hình</th><td>IPS LCD 6.79" Full HD+</td></tr>
+            <tr><th scope="row">Chip</th><td>MediaTek Helio G91 Ultra 8 nhân</td></tr>
+            <tr><th scope="row">RAM</th><td>6 GB</td></tr>
+            <tr><th scope="row">Bộ nhớ</th><td>128 GB</td></tr>
+            <tr><th scope="row">Pin</th><td>5030 mAh</td></tr>
+            <tr><th scope="row">Hệ điều hành</th><td>Xiaomi HyperOS (Android 14)</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="mt-5">
+      <h4>Mô tả sản phẩm</h4>
+      <p>Xiaomi Redmi 13x 6GB mang đến trải nghiệm toàn diện với hiệu năng mạnh mẽ, thiết kế tinh tế và camera 108 MP ấn tượng. Viên pin 5030 mAh cho thời gian sử dụng dài lâu, trong khi màn hình sắc nét và cấu hình tối ưu đảm bảo mọi tác vụ đều mượt mà. Đây là lựa chọn tuyệt vời cho những ai muốn sở hữu một chiếc smartphone chất lượng mà vẫn tiết kiệm chi phí.</p>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+      &copy; 2025 Công ty Cổ phần Thế Giới Di Động | Liên hệ: 1800 0000
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
